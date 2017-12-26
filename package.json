@@ -1,0 +1,47 @@
+{
+  "name": "rollup-plugin-hashbang",
+  "version": "0.0.0",
+  "description": "Preserve hashbang and make output file executable.",
+  "repository": {
+    "url": "egoist/rollup-plugin-hashbang",
+    "type": "git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "npm run lint && jest",
+    "lint": "xo"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "magic-string": "^0.22.4"
+  },
+  "devDependencies": {
+    "babel-jest": "^22.0.4",
+    "babel-preset-env": "^1.6.1",
+    "bili": "^1.2.7",
+    "eslint-config-rem": "^3.0.0",
+    "executable": "^4.1.0",
+    "fs-extra": "^5.0.0",
+    "jest": "^22.0.4",
+    "rollup": "^0.53.0",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem",
+    "envs": [
+      "jest"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

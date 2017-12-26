@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hashbang 1`] = `
+"#!/usr/env/env node
+'use strict';
+
+var hashbang = 42
+
+module.exports = hashbang;
+"
+`;
+
+exports[`no hashbang 1`] = `
+"'use strict';
+
+var noHashbang = 42
+
+module.exports = noHashbang;
+"
+`;
