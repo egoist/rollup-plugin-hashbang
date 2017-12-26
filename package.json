@@ -1,13 +1,15 @@
 {
   "name": "rollup-plugin-hashbang",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Preserve hashbang and make output file executable.",
   "repository": {
     "url": "egoist/rollup-plugin-hashbang",
     "type": "git"
   },
   "main": "dist/index.cjs.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "npm run lint && jest",
     "lint": "xo",
