@@ -4,7 +4,7 @@ exports[`hashbang 1`] = `
 "#!/usr/env/env node
 'use strict';
 
-var hashbang = 42
+var hashbang = 42;
 
 module.exports = hashbang;
 "
@@ -13,7 +13,7 @@ module.exports = hashbang;
 exports[`no hashbang 1`] = `
 "'use strict';
 
-var noHashbang = 42
+var noHashbang = 42;
 
 module.exports = noHashbang;
 "

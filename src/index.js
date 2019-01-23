@@ -4,6 +4,7 @@ import MagicString from 'magic-string'
 export default () => {
   let shebang
   const shebangRe = /^\s*(#!.*)/
+  let outputFile
 
   return {
     name: 'hashbang',
@@ -25,8 +26,10 @@ export default () => {
       return null
     },
 
-    transformBundle(code) {
-      if (!shebang) return
+    renderChunk(code, chunk, { file }) {
+      if (!shebang || !chunk.isEntry) return
+
+      outputFile = file
 
       const res = {}
 
@@ -37,9 +40,9 @@ export default () => {
       return res
     },
 
-    onwrite({ file }) {
-      if (shebang) {
-        fs.chmodSync(file, 0o755 & (~process.umask()))
+    writeBundle() {
+      if (shebang && outputFile) {
+        fs.chmodSync(outputFile, 0o755 & (~process.umask()))
       }
     }
   }
