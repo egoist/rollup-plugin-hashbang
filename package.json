@@ -6,7 +6,7 @@
     "url": "egoist/rollup-plugin-hashbang",
     "type": "git"
   },
-  "main": "dist/index.cjs.js",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
