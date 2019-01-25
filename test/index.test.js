@@ -40,3 +40,21 @@ test('no hashbang', async () => {
   expect(executable).toBe(false)
   expect(output).toMatchSnapshot()
 })
+
+test('chunks', async () => {
+  const bundle = await rollup({
+    input: {
+      foo: fixture('chunks/foo.js'),
+      bar: fixture('chunks/bar.js')
+    },
+    plugins: [
+      hashbangPlugin()
+    ]
+  })
+  await bundle.write({
+    format: 'cjs',
+    dir: fixture('output/chunks')
+  })
+  // expect(isExecutable(fixture('output/chunks/foo.js'))).toBe(true)
+  // expect(isExecutable(fixture('output/chunks/bar.js'))).toBe(false)
+})
