@@ -13,7 +13,7 @@
   "scripts": {
     "test": "npm run lint && jest",
     "lint": "xo",
-    "build": "rollup -c",
+    "build": "bili",
     "prepublishOnly": "npm run build"
   },
   "author": "egoist <0x142857@gmail.com>",
@@ -27,11 +27,11 @@
   "devDependencies": {
     "babel-jest": "^22.0.4",
     "babel-preset-env": "^1.6.1",
+    "bili": "^4.2.4",
     "eslint-config-rem": "^3.0.0",
     "executable": "^4.1.0",
     "fs-extra": "^5.0.0",
     "jest": "^22.0.4",
-    "rollup": "^1.1.2",
     "xo": "^0.18.0"
   },
   "xo": {
@@ -46,6 +46,14 @@
     ]
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=6"
+  },
+  "browserslist": [
+    "node 6"
+  ],
+  "bili": {
+    "babel": {
+      "babelrc": false
+    }
   }
 }
