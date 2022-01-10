@@ -1,0 +1,24 @@
+// Vitest Snapshot v1
+
+exports[`hashbang 1`] = `
+"#!/usr/env/env node
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var hashbang = 42;
+
+exports[\\"default\\"] = hashbang;
+"
+`;
+
+exports[`no hashbang 1`] = `
+"'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var noHashbang = 42;
+
+exports[\\"default\\"] = noHashbang;
+"
+`;
