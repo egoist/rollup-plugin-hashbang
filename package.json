@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-hashbang",
-  "version": "2.2.2",
+  "version": "3.0.0",
   "description": "Preserve hashbang and make output file executable.",
   "repository": {
     "url": "egoist/rollup-plugin-hashbang",
