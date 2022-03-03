@@ -5,14 +5,14 @@ specifiers:
   executable: ^4.1.1
   fs-extra: ^10.0.0
   kanpai: ^0.10.1
-  magic-string: ^0.25.7
+  magic-string: ^0.26.0
   rollup: ^2.63.0
   tsup: ^5.11.11
   typescript: ^4.5.4
   vitest: 0.4.2
 
 dependencies:
-  magic-string: 0.25.7
+  magic-string: 0.26.0
 
 devDependencies:
   '@types/fs-extra': 9.0.13
@@ -787,8 +787,9 @@ packages:
       get-func-name: 2.0.0
     dev: true
 
-  /magic-string/0.25.7:
-    resolution: {integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==}
+  /magic-string/0.26.0:
+    resolution: {integrity: sha512-TK1tGYBWlWzWabm3Lr3w1nb2GcN5ShN23jRIAsHOdc00ZffX90QPwQOALki3F+EnI40BoiZwlb4K2jMM5z3Xpg==}
+    engines: {node: '>=12'}
     dependencies:
       sourcemap-codec: 1.4.8
     dev: false
