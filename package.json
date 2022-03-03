@@ -19,7 +19,7 @@
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "magic-string": "^0.25.7"
+    "magic-string": "^0.26.0"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
